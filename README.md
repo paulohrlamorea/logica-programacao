@@ -16,3 +16,15 @@ O script foi desenvolvido para automatizar o processamento e a manipulação de 
 2. **Entrada de Dados:** O script verifica a existência dos arquivos de dados de entrada e realiza a leitura do conteúdo.
 3. **Processamento:** São aplicadas as regras de negócio ou transformações exigidas nos dados.
 4. **Saída de Dados:** O resultado final é gerado e salvo em um arquivo de saída na pasta do projeto.
+
+## 🚀 Como Executar o Arquivo Shell (`executar.sh`)
+
+O arquivo `.sh` é um script de automação para o ambiente Linux/macOS (ou Git Bash no Windows). Ele garante que as dependências estejam disponíveis e executa o código Python com um único comando.
+
+### Conteúdo do Arquivo `.sh`
+Geralmente, o script executável possui uma estrutura similar a:
+```bash
+#!/bin/bash
+echo "Iniciando a execução do script..."
+python3 script.py
+echo "Execução concluída com sucesso!"
