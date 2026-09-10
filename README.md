@@ -1,30 +1,27 @@
-# Projeto Python e Executável Shell
+# Calculadora em Python e Automação Shell
 
-Este repositório contém um script em Python para processamento de dados e um script executável em Shell (`.sh`) responsável por automatizar a preparação do ambiente e a execução da aplicação.
+Este repositório contém o código de uma calculadora desenvolvida em Python no módulo anterior e um script Shell (`.sh`) para automação da sua execução.
 
-## 🛠️ Explicação do Código Python (`script.py`)
+---
+
+## 🛠️ Explicação do Código Python (`calculadora.py`)
 
 ### Propósito
-O script foi desenvolvido para automatizar o processamento e a manipulação de dados, realizando a leitura das informações de entrada, aplicando as transformações necessárias e gerando um relatório/arquivo de saída formatado.
+O programa consiste em uma calculadora interativa em Python que realiza operações matemáticas básicas (soma, subtração, multiplicação e divisão) com base nos dados informados pelo usuário.
 
-### Bibliotecas Utilizadas
-- **`os` / `sys`**: Módulos nativos do Python utilizados para manipulação de caminhos de arquivos e interações com o sistema operacional.
-- **`pandas` / `csv`**: Utilizados para a leitura, filtragem e manipulação estruturada dos dados.
-  
-### Fluxo de Funcionamento
-1. **Inicialização:** A função principal `main()` é chamada para orquestrar o fluxo do programa.
-2. **Entrada de Dados:** O script verifica a existência dos arquivos de dados de entrada e realiza a leitura do conteúdo.
-3. **Processamento:** São aplicadas as regras de negócio ou transformações exigidas nos dados.
-4. **Saída de Dados:** O resultado final é gerado e salvo em um arquivo de saída na pasta do projeto.
+### Estrutura do Código
+- **Operações:** Funções ou condicionais que realizam os cálculos aritméticos.
+- **Entrada de dados:** Captura dos números e da operação desejada via terminal.
+- **Tratamento de exceções:** Validação para evitar erros como a divisão por zero.
+
+---
 
 ## 🚀 Como Executar o Arquivo Shell (`executar.sh`)
 
-O arquivo `.sh` é um script de automação para o ambiente Linux/macOS (ou Git Bash no Windows). Ele garante que as dependências estejam disponíveis e executa o código Python com um único comando.
+O arquivo `.sh` automatiza a chamada do script Python diretamente pelo terminal Bash.
 
-### Conteúdo do Arquivo `.sh`
-Geralmente, o script executável possui uma estrutura similar a:
-```bash
-#!/bin/bash
-echo "Iniciando a execução do script..."
-python3 script.py
-echo "Execução concluída com sucesso!"
+### Passo a Passo
+
+1. Abra o terminal e navegue até a pasta do repositório:
+   ```bash
+   cd caminho/para/o/repositorio
